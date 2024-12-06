@@ -1,0 +1,145 @@
+.contacts__container{
+   background: var(--color-bg1);
+   display: grid;
+   grid-template-columns: 40% 60%;
+   width: 100vw;
+   gap: 4rem;
+   padding: 1rem 2rem;
+   border-radius: 1rem;
+   overflow-x:hidden ;
+}
+
+aside{
+    background:transparent;
+    padding: 2rem;
+    border-radius: 1rem;
+
+
+    margin: -1rem -1rem -1rem -2rem;
+}
+
+aside p{
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.contact__details li{
+display:flex;
+text-align:end;
+gap: 1rem;
+margin-bottom: 1rem;
+
+
+
+}
+
+.socials{
+    display: flex;
+    gap:2rem;
+    margin-top: 2rem;
+    
+}
+
+.socials a{
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 50%;
+  
+}
+.socials a:hover{
+    background: transparent;
+    border:0.009rem solid var(--color-primary);
+    transition: var(--transition);
+}
+
+/* ======= FORM DECOLARATION==============*/
+
+.form__name{
+display: flex;
+flex-direction: column;
+gap: 1.2rem;
+margin-right: 4rem;
+right: 3rem;
+}
+
+.contact__form input[type="text "]{
+    width: 50%;
+
+}
+
+input,textarea{
+    background:var(--color-bg);
+    border: 2px solid var(--color-white);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    width: 50%;
+}
+
+.btn{
+    width: max-content;
+    margin-top: 1rem;
+    
+}
+
+
+
+/*==== MEDIA QUERIES========TABLETS=====*/
+
+@media screen and (max-width:1024px){
+ .contacts{
+    padding: 0;
+ }
+
+    .contacts__container{
+        gap: 5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .aside{
+        width: auto;
+        padding: 0
+    
+    }
+
+    .form__name{
+        align-self: center;
+    }
+    .form__name input[type="text"],textarea{
+        width: 100%;
+    }
+    .form__name input[type="email"]{
+        width: 100%;
+
+    }
+
+    
+    
+    
+}
+
+   /* ===============
+   
+    MEDIA QUERIES FOR MOBILE=================================*/
+
+
+    @media screen and (max-width:600px){
+        .aside{
+            align-self: center;
+            padding: 0;
+         
+
+        }
+        .contacts__container{
+            grid-template-columns: 1fr;
+            margin-top: 0;
+        }
+
+        .form__name input[type="text"]{
+            width: 100%;
+
+        }
+
+    }

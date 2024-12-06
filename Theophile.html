@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="Phrase">
+
+    <input type="text" id="input">
+   
+
+    <button onclick="append()">Append</button>
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+
+    function append (){
+       const phrase = document.getElementsByClassName('Phrase');
+       const para = document.createElement('p');
+       let input = document.getElementById('input').value;
+       para.textContent = input;
+       para.style.background = "green";
+       para.style.padding = '1rem';
+       para.style.color= "white";
+    
+        document.body.appendChild( para);
+       
+    }
+   
+    phrase.style.display = "flex";
+    append();
+
+    </script>
+
+
+
+</html>
